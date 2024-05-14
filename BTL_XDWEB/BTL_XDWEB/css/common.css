@@ -114,7 +114,7 @@ h3 {
     box-sizing: border-box;
     border: 0px solid #e5e7eb;
     display: flex;
-    border-radius: 20px;
+    border-radius: 1cap;
     overflow: hidden;
     background-color: #18181B;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -132,6 +132,8 @@ h3 {
 }
 
 .card-image{
+    position: relative;
+    overflow: hidden;
     object-fit: contain;
     height: auto;
     max-width: 100%;
@@ -139,6 +141,12 @@ h3 {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.card-image img {
+    transition: transform 0.3s ease;
+}
+.card-image:hover img {
+    transform: scale(1.1);
 }
 .content{
     padding-right: 20px;
