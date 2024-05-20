@@ -64,12 +64,12 @@ body{
     position: absolute;
 }
 /* BREAKPOINTS */
-@media(max-width: 992px){
+@media(max-width: 1537px){
     nav{
         padding: 1.3rem 5%;
     }
 }
-@media (max-width:768px){
+@media (max-width: 1537px){
     .icon{
         display: inline-flex;
         right: 5%;
@@ -95,6 +95,10 @@ body{
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
+    }
+    .header{
+        background: none;
+        backdrop-filter: none;
     }
 }
 .nav-logo{
@@ -140,12 +144,21 @@ body{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #18181B;
+    background-color: black;
     border: 1px solid #fff;
     border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-right: 15px;
+}
+
+.sign_in:hover{
+    transform: scale(1.1);
+}
+
+.sign_up:hover{
+    transform: scale(1.1);
+    background-color: rgb(94, 91, 91);
 }
 
 ion-icon{
@@ -158,6 +171,29 @@ ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ngay-chieu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.ngay-chieu button {
+    border: 1px solid white;
+    border-radius: 1cap;
+    padding: 5px 20px;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ngay-chieu button:hover{
+    background-color: rgb(94, 91, 91);
 }
 
 h3 {
@@ -213,7 +249,7 @@ h3 {
     padding: .2rem .1rem;
     border: 1px solid #e5e7eb;
     text-align: center;
-    border-radius: 25%;
+    border-radius: 1cap;
     position: absolute;
     right: .5rem;
     top: .5rem;
@@ -242,13 +278,72 @@ h3 {
     padding-right: .75rem;
     align-items: center;
     display: inline-flex;
-    border-radius: 15%;
+    border-radius: 1cap;
     background-color: #18181B;
     border: 1px solid white;
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.time:hover{
+    background-color: rgb(94, 91, 91);
+}
+
+/* css cho homepage */
+
+
+.content-hp{
+    max-width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.cur-film-hp{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-film-hp{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-pdc{
+    display: flex;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 30px;
+}
+
+.row-pdc::-webkit-scrollbar {
+    display: none;
+}
+
+.row-pdc img:hover{
+    transform: scale(1.03);
+}
+
+.row-pdc img {
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+.row-psc{
+    display: flex;
+}
+
+.row-psc img {
+    max-width: 200px;
+    margin-left: 10px;
+}
 
 
 
