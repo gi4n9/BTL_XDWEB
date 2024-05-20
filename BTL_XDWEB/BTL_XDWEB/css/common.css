@@ -64,12 +64,10 @@ body{
     position: absolute;
 }
 /* BREAKPOINTS */
-@media(max-width: 1537px){
+@media (max-width: 1537px){
     nav{
         padding: 1.3rem 5%;
     }
-}
-@media (max-width: 1537px){
     .icon{
         display: inline-flex;
         right: 5%;
@@ -297,6 +295,13 @@ h3 {
     max-width: 100%;
     margin-top: 50px;
     display: flex;
+    transition: transform 450ms;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+.content-hp::-webkit-scrollbar{
+    display: none;
 }
 
 .cur-film-hp{
@@ -338,8 +343,19 @@ h3 {
 
 .row-psc{
     display: flex;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 30px;
 }
-
+.row-psc::-webkit-scrollbar {
+    display: none;
+}
+.row-psc img:hover{
+    transform: scale(1.03);
+}
 .row-psc img {
     max-width: 200px;
     margin-left: 10px;
