@@ -43,6 +43,7 @@ body{
     backdrop-filter: blur(50px);
     max-height: 100px;
 }
+
 .header::before{
     content: '';
     position: absolute;
@@ -55,7 +56,6 @@ body{
     z-index: -1;
 }
 
-
 .icon{
     font-size: 2.8rem;
     color: #fff;
@@ -63,8 +63,9 @@ body{
     display: none;
     position: absolute;
 }
+
 /* BREAKPOINTS */
-@media (max-width: 1537px){
+@media (max-width: 678px){
     nav{
         padding: 1.3rem 5%;
     }
@@ -159,7 +160,13 @@ body{
     background-color: rgb(94, 91, 91);
 }
 
-ion-icon{
+.next-film ion-icon{
+    color: #e71717;
+}
+.cur-film-hp ion-icon{
+    color: #e71717;
+}
+.next-film-hp{
     color: #e71717;
 }
 
@@ -232,16 +239,20 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .card-image img {
     transition: transform 0.3s ease;
 }
+
 .card-image:hover img {
     transform: scale(1.1);
 }
+
 .content{
     padding-right: 20px;
     margin: 20px;
 }
+
 .style{
     width: 45px;
     padding: .2rem .1rem;
@@ -252,9 +263,11 @@ h3 {
     right: .5rem;
     top: .5rem;
 }
+
 .position-content{
     top: 5%;
 }
+
 .tltg{
     gap: 1.25rem;
     display: flex;
@@ -262,13 +275,16 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
 }
+
 .warning{
     opacity: 80%;
     color: rgb(239, 68, 68);
 }
+
 .btn{
     margin-top: .75rem;
 }
+
 .time{
     margin-top: .3rem;
     border-color: white;
@@ -290,7 +306,6 @@ h3 {
 
 /* css cho homepage */
 
-
 .content-hp{
     max-width: 100%;
     margin-top: 50px;
@@ -300,18 +315,21 @@ h3 {
     overflow-x: scroll;
 
 }
+
 .content-hp::-webkit-scrollbar{
     display: none;
 }
 
 .cur-film-hp{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .next-film-hp{
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -325,7 +343,6 @@ h3 {
     transition: transform 450ms;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 30px;
 }
 
 .row-pdc::-webkit-scrollbar {
@@ -359,6 +376,53 @@ h3 {
 .row-psc img {
     max-width: 200px;
     margin-left: 10px;
+}
+
+.arrow{
+    width: 100%;
+    
+}
+
+.arrow-left{
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 2.5vw;
+    display: flex;
+    background-color: hsla(0, 0%, 8%, .5);
+    cursor: pointer;
+    color: white;
+    transition: transform .1s ease-in-out 0s;
+    left: 0px;
+    z-index: 99;
+}
+
+.arrow-left:hover{
+    transform: scale(1.2);
+}
+
+.arrow-right{
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 2.5vw;
+    display: flex;
+    background-color: hsla(0, 0%, 8%, .5);
+    cursor: pointer;
+    color: white;
+    transition: transform .1s ease-in-out 0s;
+    right: 0px;
+    z-index: 99;
+}
+
+.arrow-right:hover{
+    transform: scale(1.2);
 }
 
 
