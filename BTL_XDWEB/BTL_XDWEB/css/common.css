@@ -171,6 +171,7 @@ body{
 }
 
 .next-film{
+    font-size: 20px;
     margin-top: 100px;
     margin-bottom: 20px;
     display: flex;
@@ -424,6 +425,47 @@ h3 {
 .arrow-right:hover{
     transform: scale(1.2);
 }
+
+.content-gt{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.btn-gioi-thieu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-gioi-thieu button{
+    border: 1px solid white;
+    border-radius: 1cap;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+}
+.btn-gioi-thieu button:hover{
+    background-color: rgb(94, 91, 91);
+}
+.div-infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infor{
+    color: white;
+    margin: 10px;
+    padding: 5px 20px;
+    max-width: 75rem;
+}
+.infor h3{
+    margin-top: 10px;
+}
+
+
 
 
 
