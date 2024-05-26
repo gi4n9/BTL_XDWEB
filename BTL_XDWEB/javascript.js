@@ -10,7 +10,7 @@ arrowsRight.forEach((arrow, i) =>{
         if (itemNumber - (6 + clickCounter) >= 0){
             movieLists[i].style.transform = `translateX(${
                 movieLists[i].computedStyleMap().get("transform")[0].x.value
-            -310}px)`;  
+            -320}px)`;  
         } else {
             movieLists[i].style.transform = "translateX(0)";
             clickCounter = 0;
@@ -19,4 +19,5 @@ arrowsRight.forEach((arrow, i) =>{
     });
     console.log(movieLists[i].querySelectorAll("img").length)
 });
+
 
