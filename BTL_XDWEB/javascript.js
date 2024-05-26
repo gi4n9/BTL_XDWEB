@@ -1,5 +1,4 @@
 const arrowsRight = document.querySelectorAll(".arrow-right");
-const arrowsLeft = document.querySelectorAll(".arrow-left");
 const movieLists = document.querySelectorAll(".list-film");
 
 
@@ -18,6 +17,6 @@ arrowsRight.forEach((arrow, i) =>{
         }
         
     });
-
     console.log(movieLists[i].querySelectorAll("img").length)
 });
+
