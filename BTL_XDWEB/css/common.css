@@ -535,6 +535,12 @@ h3 {
     font-weight: 600;
     font-size: 1.125rem;
 }
+th, td{
+    padding: 10px;
+    color: #fff;
+    background-color: #181818;
+    border-radius: 1cap;
+}
 
 
 
