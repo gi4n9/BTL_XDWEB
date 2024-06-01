@@ -11,6 +11,10 @@
     font-family: inherit;
 }
 
+:root{
+    --color: linear-gradient(0deg, transparent, rgb(184,184,184,.2))
+}
+
 .nav-logo img{
     height: auto;
     max-width: 100%;
@@ -23,7 +27,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-color: #181818
 }
 
 .header{
@@ -124,7 +128,8 @@ body{
     font-size: 1.15rem;
     color: #fff;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 18px;
     margin-left: 2.5rem;
     padding: 1px;
     position: relative;
@@ -537,8 +542,146 @@ th, td{
     background-color: #181818;
     border-radius: 1cap;
 }
+.below img{
+    height: 390px;
+    width: 100%;
+    position: absolute;
+    filter: blur(20px);
+}
+.first-content{
+    max-width: 68rem;
+    margin: auto;
+    display: flex;
+    margin-top: 120px;
+}
+.first-content img{
+    width: 238px;
+    height: 333px;
+    border-radius: 1cap;
+    box-shadow: 10px 10px inset white;
+}
+.first-content .title-dv{
+    color: white;
+    padding-left: 20px;
+}
+.first-content .title-dv p{
+    font-size: 16px;
+    font-weight: 400;
+}
 
+.date-booking{
+    margin-top: 15px;
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    justify-content: center;
+}
+.date{
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.date:hover{
+    background-color: red;
+}
+.onair-time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.onair-time button{
+    width: 200px;
+    color: white;
+    background-color: #18181B;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.onair-time button:hover{
+    background-color: #8d8d8d;
+}
+.screen{
+    max-width: 68rem;
+    margin: auto;
+    border-top: 3px solid red;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: inset 0px 10px 20px var(--color);
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+.chairs{
+    max-width: 50rem;
+    /* border: 1px solid white; */
+    margin: auto;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
+.row li{
+    margin: 0 8px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    list-style: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descriptions{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.descriptions,.description-vip,.description-booked,.description-normal,.description-couple,.description-choosen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.descriptions .description-couple div{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+.descriptions .description-normal div{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+.descriptions .description-choosen div{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(79, 79, 248);
+}
+.descriptions .description-booked div{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background-color:gray;
+}
 
 
 
