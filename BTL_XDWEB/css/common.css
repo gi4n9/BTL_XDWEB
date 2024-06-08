@@ -576,14 +576,18 @@ th, td{
     justify-content: center;
 }
 .date{
+    width: 100px;
+    height: auto;
     font-weight: 500;
     color: white;
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 .date:hover{
     background-color: red;
+    
 }
 .onair-time{
     display: flex;
@@ -619,7 +623,6 @@ th, td{
 }
 .chairs{
     max-width: 50rem;
-    /* border: 1px solid white; */
     margin: auto;
 }
 .row{
@@ -707,7 +710,15 @@ th, td{
 .active{
     display: block;
 }
-
+.clicked{
+    background-color: red;
+}
+.color-white{
+    color: white;
+}
+.select{
+    background-color: blue;
+}
 
 
 
