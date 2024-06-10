@@ -1,6 +1,3 @@
-import data from "./data.json" assert {type: "json"};
-console.log(data);
-
 const arrowsRight = document.querySelectorAll(".arrow-right");
 const movieLists = document.querySelectorAll(".list-film");
 
