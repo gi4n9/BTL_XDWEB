@@ -37,7 +37,115 @@
             <button class="sign_in">Đăng nhập</button>
         </div>
     </header>
-    <div id="detail-card1">
+    <!-- <div id="card-list-phim"></div> -->
+    <div id="detail-card1" class="hidden">
+        <div class="phim">
+            <div class="below">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
+            </div>
+            <div class="first-content">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
+                <div class="title-dv">
+                    <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
+                    <p>Kinh dị Thái Lan 111 phút</p>
+                    <p>Đạo diễn: Phontharis Chotkijsadarsopon</p>
+                    <p>Diễn viên: Witthawat Rattanaboonbaramee, Bhuripat Vejvongsatechawat, Phiravich Attachitsataporn
+                    </p>
+                    <p>Khởi chiếu: 31/05/2024</p><br>
+                    <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
+                        mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
+                        tan rã từ đây?</p><br>
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                        TUỔI TRỞ LÊN (16+)</p>
+                </div>
+            </div>
+        </div>
+        <div id="card_list_date" class="date-booking"></div>
+        <div>
+            <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
+                tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
+                23h.</p>
+        </div>
+        <div id="card_list_time" class="onair-time"></div>
+
+        <div class="room">
+            <div id="screens"></div>
+            <div id="card_index" class="chairs">
+            </div>
+        </div>
+        <div id="descriptions"></div>
+        <div class="pay">
+            <div id="card_gia"></div>
+            <div id="purchase"></div>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Đặt vé thành công</h2>
+            <p>Cảm ơn bạn đã sử dụng dịch vụ của Rạp chiếu phim </p>
+            <button type="button" id="closePopup" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <div id="detail-card2" class="hidden">
+        <div class="phim">
+            <div class="below">
+                <img src="images/doraemon(ngang).webp" alt="">
+            </div>
+            <div class="first-content">
+                <img src="images/Doraemon.jpg" alt="">
+                <div class="title-dv">
+                    <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
+                    <p>Kinh dị Thái Lan 111 phút</p>
+                    <p>Đạo diễn: Phontharis Chotkijsadarsopon</p>
+                    <p>Diễn viên: Witthawat Rattanaboonbaramee, Bhuripat Vejvongsatechawat, Phiravich Attachitsataporn
+                    </p>
+                    <p>Khởi chiếu: 31/05/2024</p><br>
+                    <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
+                        mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
+                        tan rã từ đây?</p><br>
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                        TUỔI TRỞ LÊN (16+)</p>
+                </div>
+            </div>
+        </div>
+        <div id="card_list_date" class="date-booking"></div>
+        <div>
+            <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
+                tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
+                23h.</p>
+        </div>
+        <div id="card_list_time" class="onair-time"></div>
+
+        <div class="room">
+            <div style="color: white;" class="screen">Screen</div>
+            <div id="card_index" class="chairs">
+            </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
+            </div>
+        </div>
+    </div>
+    <div id="detail-card3" class="hidden">
         <div class="phim">
             <div class="below">
                 <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
@@ -75,940 +183,36 @@
 
         <div id="card_gia" class="">
         </div>
-
-        <div id="" class="room hidden">
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
             </div>
-        </div>
-
-        <div id="" class="room hidden">
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
             </div>
-        </div>
-        <div id="" class="room hidden">
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: gray;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
-            </div>
-        </div>
-        <div id="" class="room hidden">
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: gray;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
-            </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="detail-card2" class="hidden">
-        <div class="phim">
-            <div class="below">
-                <img src="images/doraemon(ngang).webp" alt="">
-            </div>
-            <div class="first-content">
-                <img src="images/Doraemon.jpg" alt="">
-                <div class="title-dv">
-                    <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
-                    <p>Kinh dị Thái Lan 111 phút</p>
-                    <p>Đạo diễn: Phontharis Chotkijsadarsopon</p>
-                    <p>Diễn viên: Witthawat Rattanaboonbaramee, Bhuripat Vejvongsatechawat, Phiravich Attachitsataporn
-                    </p>
-                    <p>Khởi chiếu: 31/05/2024</p><br>
-                    <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
-                        mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
-                        tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
-                        TUỔI TRỞ LÊN (16+)</p>
-                </div>
-            </div>
-        </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
-        <div>
-            <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
-                tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
-                23h.</p>
-        </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
-
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
-            </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="detail-card3" class="hidden">
-        <div class="phim">
-            <div class="below">
-                <img src="images/furiosa(ngang).png" alt="">
-            </div>
-            <div class="first-content">
-                <img src="images/Furiosa.jpg" alt="">
-                <div class="title-dv">
-                    <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
-                    <p>Kinh dị Thái Lan 111 phút</p>
-                    <p>Đạo diễn: Phontharis Chotkijsadarsopon</p>
-                    <p>Diễn viên: Witthawat Rattanaboonbaramee, Bhuripat Vejvongsatechawat, Phiravich Attachitsataporn
-                    </p>
-                    <p>Khởi chiếu: 31/05/2024</p><br>
-                    <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
-                        mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
-                        tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
-                        TUỔI TRỞ LÊN (16+)</p>
-                </div>
-            </div>
-        </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
-        <div>
-            <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
-                tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
-                23h.</p>
-        </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
-
-            <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
-            </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card4" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/Arkie(ngang).jpg" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/Arkie.jpg" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -1019,210 +223,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card5" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/KongvsGod(ngang).jpg" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/posterKongvsGod.jpg" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -1233,210 +284,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card6" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/haiku(ngang).webp" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/Haikyuu.png" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -1447,210 +345,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card7" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/tarot(ngang).webp" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/tarot.webp" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -1661,210 +406,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card8" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/VayHam.jpg" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/vayHam.webp" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -1875,210 +467,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card9" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/Kungfupanda4.webp" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/KungfuPanda.webp" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -2089,210 +528,57 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
     <div id="detail-card10" class="hidden">
         <div class="phim">
             <div class="below">
-                <img src="images/hanhtinhkhi4.webp" alt="">
+                <img src="images/Ngoi den ky quai(ngang).jpg" alt="">
             </div>
             <div class="first-content">
-                <img src="images/hanhTinhKhi.webp" alt="">
+                <img src="images/Ngôi đền kỳ quái 4.jpg" alt="">
                 <div class="title-dv">
                     <h1>NGÔI ĐỀN KỲ QUÁI 4-T16</h1>
                     <p>Kinh dị Thái Lan 111 phút</p>
@@ -2303,208 +589,62 @@
                     <p>Hồn ma Nak với sức mạnh khủng khiếp nhất, đáng sợ nhất mà bộ đôi mỏ hỗn Balloon & First phải đối
                         mặt để giải cứu cho trai đẹp Min Joon. Liệu hội bạn này sẽ giải được nghiệp mình tạo ra hay sẽ
                         tan rã từ đây?</p><br>
-                    <p style="color: rgb(230, 36, 36);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
+                    <p style="color: rgb(234, 53, 53);">Khuyến cáo: .T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16
                         TUỔI TRỞ LÊN (16+)</p>
                 </div>
             </div>
         </div>
-        <div class="date-booking">
-            <div class="date">
-                <p>Th.05</p>
-                <p style="font-size: 20px; font-weight: 700;">31</p>
-                <p>Thứ sáu</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">01</p>
-                <p>Thứ bảy</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">02</p>
-                <p>Chủ nhật</p>
-            </div>
-            <div class="date">
-                <p>Th.06</p>
-                <p style="font-size: 20px; font-weight: 700;">03</p>
-                <p>Thứ hai</p>
-            </div>
-        </div>
+        <div id="card_list_date" class="date-booking"></div>
         <div>
             <p style="text-align: center; color: rgb(208, 188, 33);margin: 10px 0px;"><b>Lưu ý:</b> Khán giả dưới 13
                 tuổi chỉ chọn suất chiếu kết thúc trước 22h và Khán giả dưới 16 tuổi chỉ chọn suất chiếu kết thúc trước
                 23h.</p>
         </div>
-        <div class="onair-time">
-            <button>9:20</button>
-            <button>13:10</button>
-            <button>15:30</button>
-            <button>20:45</button>
-        </div>
-        <div class="room">
+        <div id="card_list_time" class="onair-time"></div>
 
+        <div class="room">
             <div style="color: white;" class="screen">Screen</div>
-            <div class="chairs">
-                <div class="row">
-                    <li class="seat">A10</li>
-                    <li class="seat">A9</li>
-                    <li class="seat">A8</li>
-                    <li class="seat">A7</li>
-                    <li class="seat">A6</li>
-                    <li class="seat">A5</li>
-                    <li class="seat">A4</li>
-                    <li class="seat">A3</li>
-                    <li class="seat">A2</li>
-                    <li class="seat">A1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">B10</li>
-                    <li class="seat">B9</li>
-                    <li class="seat">B8</li>
-                    <li class="seat">B7</li>
-                    <li class="seat">B6</li>
-                    <li class="seat">B5</li>
-                    <li class="seat">B4</li>
-                    <li class="seat">B3</li>
-                    <li class="seat">B2</li>
-                    <li class="seat">B1</li>
-                </div>
-                <div class="row">
-                    <li class="seat">C10</li>
-                    <li class="seat">C9</li>
-                    <li class="seat">C8</li>
-                    <li class="seat">C7</li>
-                    <li class="seat">C6</li>
-                    <li class="seat">C5</li>
-                    <li class="seat">C4</li>
-                    <li class="seat">C3</li>
-                    <li class="seat">C2</li>
-                    <li class="seat">C1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">D10</li>
-                    <li style="background-color: orange;" class="seat">D9</li>
-                    <li style="background-color: orange;" class="seat">D8</li>
-                    <li style="background-color: orange;" class="seat">D7</li>
-                    <li style="background-color: orange;" class="seat">D6</li>
-                    <li style="background-color: orange;" class="seat">D5</li>
-                    <li style="background-color: orange;" class="seat">D4</li>
-                    <li style="background-color: orange;" class="seat">D3</li>
-                    <li style="background-color: orange;" class="seat">D2</li>
-                    <li style="background-color: orange;" class="seat">D1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">E10</li>
-                    <li style="background-color: orange;" class="seat">E9</li>
-                    <li style="background-color: orange;" class="seat">E8</li>
-                    <li style="background-color: orange;" class="seat">E7</li>
-                    <li style="background-color: orange;" class="seat">E6</li>
-                    <li style="background-color: orange;" class="seat">E5</li>
-                    <li style="background-color: orange;" class="seat">E4</li>
-                    <li style="background-color: orange;" class="seat">E3</li>
-                    <li style="background-color: orange;" class="seat">E2</li>
-                    <li style="background-color: orange;" class="seat">E1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">F10</li>
-                    <li style="background-color: orange;" class="seat">F9</li>
-                    <li style="background-color: orange;" class="seat">F8</li>
-                    <li style="background-color: orange;" class="seat">F7</li>
-                    <li style="background-color: orange;" class="seat">F6</li>
-                    <li style="background-color: orange;" class="seat">F5</li>
-                    <li style="background-color: orange;" class="seat">F4</li>
-                    <li style="background-color: orange;" class="seat">F3</li>
-                    <li style="background-color: orange;" class="seat">F2</li>
-                    <li style="background-color: orange;" class="seat">F1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">G10</li>
-                    <li style="background-color: orange;" class="seat">G9</li>
-                    <li style="background-color: orange;" class="seat">G8</li>
-                    <li style="background-color: orange;" class="seat">G7</li>
-                    <li style="background-color: orange;" class="seat">G6</li>
-                    <li style="background-color: orange;" class="seat">G5</li>
-                    <li style="background-color: orange;" class="seat">G4</li>
-                    <li style="background-color: orange;" class="seat">G3</li>
-                    <li style="background-color: orange;" class="seat">G2</li>
-                    <li style="background-color: orange;" class="seat">G1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">H10</li>
-                    <li style="background-color: orange;" class="seat">H9</li>
-                    <li style="background-color: orange;" class="seat">H8</li>
-                    <li style="background-color: orange;" class="seat">H7</li>
-                    <li style="background-color: orange;" class="seat">H6</li>
-                    <li style="background-color: orange;" class="seat">H5</li>
-                    <li style="background-color: orange;" class="seat">H4</li>
-                    <li style="background-color: orange;" class="seat">H3</li>
-                    <li style="background-color: orange;" class="seat">H2</li>
-                    <li style="background-color: orange;" class="seat">H1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">I10</li>
-                    <li style="background-color: orange;" class="seat">I9</li>
-                    <li style="background-color: orange;" class="seat">I8</li>
-                    <li style="background-color: orange;" class="seat">I7</li>
-                    <li style="background-color: orange;" class="seat">I6</li>
-                    <li style="background-color: orange;" class="seat">I5</li>
-                    <li style="background-color: orange;" class="seat">I4</li>
-                    <li style="background-color: orange;" class="seat">I3</li>
-                    <li style="background-color: orange;" class="seat">I2</li>
-                    <li style="background-color: orange;" class="seat">I1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: orange;" class="seat">J10</li>
-                    <li style="background-color: orange;" class="seat">J9</li>
-                    <li style="background-color: orange;" class="seat">J8</li>
-                    <li style="background-color: orange;" class="seat">J7</li>
-                    <li style="background-color: orange;" class="seat">J6</li>
-                    <li style="background-color: orange;" class="seat">J5</li>
-                    <li style="background-color: orange;" class="seat">J4</li>
-                    <li style="background-color: orange;" class="seat">J3</li>
-                    <li style="background-color: orange;" class="seat">J2</li>
-                    <li style="background-color: orange;" class="seat">J1</li>
-                </div>
-                <div class="row">
-                    <li style="background-color: red;" class="seat">K8</li>
-                    <li style="background-color: red;" class="seat">K7</li>
-                    <li style="background-color: red;" class="seat">K6</li>
-                    <li style="background-color: red;" class="seat">K5</li>
-                    <li style="background-color: red;" class="seat">K4</li>
-                    <li style="background-color: red;" class="seat">K3</li>
-                    <li style="background-color: red;" class="seat">K2</li>
-                    <li style="background-color: red;" class="seat">K1</li>
-                </div>
+            <div id="card_index" class="chairs">
             </div>
-            <div class="descriptions">
-                <div class="description-booked">
-                    <div class="choosen"><i class='bx bx-x'></i></div>
-                    <p>Ghế đã đặt</p>
-                </div>
-                <div class="description-choosen">
-                    <div></div>
-                    <p>Ghế bạn chọn</p>
-                </div>
-                <div class="description-normal">
-                    <div></div>
-                    <p>Ghế Thường</p>
-                </div>
-                <div class="description-vip">
-                    <div></div>
-                    <p>Ghế VIP</p>
-                </div>
-                <div class="description-couple">
-                    <div></div>
-                    <p>Ghế đôi</p>
-                </div>
+        </div>
+
+        <div id="card_gia" class="">
+        </div>
+        <div class="descriptions">
+            <div class="description-booked">
+                <div class="choosen"><i class='bx bx-x'></i></div>
+                <p>Ghế đã đặt</p>
+            </div>
+            <div class="description-choosen">
+                <div></div>
+                <p>Ghế bạn chọn</p>
+            </div>
+            <div class="description-normal">
+                <div></div>
+                <p>Ghế Thường</p>
+            </div>
+            <div class="description-vip">
+                <div></div>
+                <p>Ghế VIP</p>
+            </div>
+            <div class="description-couple">
+                <div></div>
+                <p>Ghế đôi</p>
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div style="position: relative;bottom: 0;" class="footer">
         <h3> &copy; NoCopyright !!!!</h3>
     </div>
 </body>
-<script type="module" src="javascript.js"></script>
-<script type="module" src="./main.js"></script>
 
+<script>
+    let popup = document.getElementById("popup");
+    let paid = document.querySelector(".purchase_btn");
+    
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+<script type="module" src="main.js"></script>
 </html>

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +7,6 @@
     box-sizing: border-box;
     position: relative;
     line-height: 2rem;
-    font-family: inherit;
 }
 
 :root{
@@ -343,7 +341,7 @@ h3 {
 }
 
 .content-hp-image {
-    margin-top: 60px;
+    margin-top: 80px;
     width: 100%;
     height: auto;
 }
@@ -646,10 +644,10 @@ th, td{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3ms ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .seat:hover{
-    background-color: rgb(79, 79, 248)!important;
+    background-color: blue !important;
 }
 .descriptions{
     margin-top: 30px;
@@ -687,7 +685,7 @@ th, td{
     border-radius: 6px;
     width: 30px;
     height: 30px;
-    background-color: rgb(79, 79, 248);
+    background-color: blue;
 }
 .descriptions .description-booked div{
     border-radius: 6px;
@@ -713,17 +711,65 @@ th, td{
 .clicked{
     background-color: red;
 }
-.color-white{
+.pay{
+    /* background-color:red; */
+    padding: 20px;
+    margin: 10px;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 .select{
     background-color: blue;
 }
-
-
-
-
-
-
-
-
+.pay{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.purchase_btn{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #3f3d3d;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.purchase_btn:hover{
+    background-image: linear-gradient(50deg,Firebrick, Salmon);
+    transform: scale(1.1);
+}
+.popup{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 400px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 30px 30px 30px;
+    visibility: hidden;
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    background-color: rgb(105, 189, 105);
+    color: white;
+    width: 100%;
+    padding: 10px 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.popup button:hover{
+    background-color: rgb(5, 170, 5);
+}
+.open-popup{
+    visibility: visible;
+}
