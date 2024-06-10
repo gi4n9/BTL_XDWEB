@@ -34,25 +34,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    function getQueryParams() {
-        const params = {};
-        window.location.search.substring(1).split("&").forEach(pair => {
-            const [key, value] = pair.split("=");
-            params[decodeURIComponent(key)] = decodeURIComponent(value);
-        });
-        return params;
-    }
-
-    const params = getQueryParams();
-    const movieId = params['id'];
-
-    if (movieId) {
-        const detailDiv = document.getElementById('detail-' + movieId);
-        if (detailDiv) {
-            detailDiv.classList.remove('hidden');
-            detailDiv.classList.add('active');
-        }
-    }
-});
