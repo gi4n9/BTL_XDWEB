@@ -78,7 +78,6 @@ body{
     #check:checked~.icon #close-icon{
         display: block;
     }
-
     .icon{
         display: inline-flex;
         right: 5%;
@@ -91,7 +90,7 @@ body{
         height: 0;
         background: rgba(0, 0, 0, .1);
         backdrop-filter: blur(50px);
-        /* overflow: hidden; */
+        overflow: hidden;
         transition: .3s ease;
     }
     #check:checked~.nav-links{
