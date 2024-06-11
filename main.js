@@ -6,7 +6,9 @@ const renderFilm = () => {
     const currentUrl = window.location.href;
     const url = new URL(currentUrl);
     const params = new URLSearchParams(url.search);
+    console.log(url.search);
     const id = params.get('id');
+    console.log(id);
     
     const phim = data.find(item => item.id === id);
     
@@ -53,8 +55,8 @@ const renderFilm = () => {
         card_list_date.appendChild(date);
 
         date.addEventListener("click", () => {
-            card_list_time.innerHTML = "";
             // reset
+            card_list_time.innerHTML = "";
             pay = [];
             card_gia.innerHTML = "";
             card_index.innerHTML = "";
@@ -78,8 +80,8 @@ const renderFilm = () => {
                     const screen = document.createElement("div");
                     screen.innerHTML =
                         `
-                                <div style="color: white;" class="screen">Screen</div>
-                            `
+                            <div style="color: white;" class="screen">Screen</div>
+                        `
                     screens.appendChild(screen);
 
                     const description = document.createElement("div");
@@ -107,10 +109,10 @@ const renderFilm = () => {
                                     <p>Ghế đôi</p>
                                 </div>
                             </div>
-                            `
+                        `
                     descriptions.appendChild(description);
-                    card_index.innerHTML = "";
                     // reset
+                    card_index.innerHTML = "";
                     pay = [];
                     card_gia.innerHTML = "";
 
@@ -119,7 +121,10 @@ const renderFilm = () => {
                     gio.ghe.forEach((g, i) => {
                         childGhes.push(g);
                         if (childGhes.length === 10 || i === gio.ghe.length - 1) {
+                            console.log(childGhes.length);
+                            console.log(i);
                             ghes.push(childGhes);
+                            console.log(childGhes);
                             childGhes = [];
                         }
                     });
@@ -156,10 +161,15 @@ const renderFilm = () => {
                             ghe.addEventListener("click", () => {
                                 card_gia.innerHTML = "";
                                 purchase.innerHTML = "";
-
+                                //kiem tra xem ghe duoc chon hay chua
+                                //su dung find de kiem tra xem ghe.id da co trong danh sach pay hay chua
                                 const isSelect = pay.find(g => g.id === ghe.id);
+                                console.log("1",isSelect)
+                                //bo chon ghe
                                 if (isSelect) {
                                     let newPay = pay.filter(g => g.id !== ghe.id);
+                                    console.log(newPay);
+                                    console.log(ghe.id);
                                     switch (g.type) {
                                         case "thuong":
                                             ghe.style.backgroundColor = "gray";
@@ -175,7 +185,7 @@ const renderFilm = () => {
                                             break;
                                     }
                                     pay = newPay;
-                                } else {
+                                } else { //ghe da chon
                                     pay.push(g);
                                     if (g.link_id) {
                                         const item_ghe_nam_canh = mang_ghe.find(mg => mg.id === g.link_id);
@@ -205,7 +215,7 @@ const renderFilm = () => {
                                 })
 
                                 popup.addEventListener("click", () => {
-                                    window.location.pathname = "/trang chủ.html"
+                                    window.location.href = "trang chủ.html"
                                 })
                             })
                         })

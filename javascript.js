@@ -5,6 +5,7 @@ const movieLists = document.querySelectorAll(".list-film");
 arrowsRight.forEach((arrow, i) =>{
     const itemNumber = movieLists[i].querySelectorAll("img").length;
     let clickCounter = 0;
+    console.log(itemNumber);
     arrow.addEventListener("click", ()=>{
         clickCounter++;
         if (itemNumber - (6 + clickCounter) >= 0){
